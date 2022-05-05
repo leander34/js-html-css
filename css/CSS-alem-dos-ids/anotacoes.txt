@@ -1,0 +1,87 @@
+Seletores
+
+Element selector
+ID selector
+Class selector
+
+Attribute selector
+ex: no html -> title="alguma coisa"
+css -> [title] {
+    color: red;
+}
+
+ou
+
+[title="alguma coisa"] {
+    color: blue;
+}
+
+
+Pseudo-class selector
+button:hover {
+    background: blue;
+}
+
+
+Child combinator
+* Identificado pelo sinal ' > ' entre dois seletores
+* Seleciona somente o elemento que é filho direto do pai
+* Elementos depois do filho direto serão desconsiderados
+
+body > ul > li
+
+Adjacent sibling combinator
+* sinal de +
+* Seleciona somente o elemento do lado direito que é irmão direto na hierarquia
+* pega o elemento irmão
+* nesse caso o p precisa ser o próximo elemento
+
+h1 + p {
+
+}
+
+General sibling combinator
+* sinal ~
+*  pega todos os elementos irmãos
+
+h1 ~ p {
+    color: blue;
+}
+
+Pseudo-classes
+
+:first-child
+* o li precisa ser o primeiro filho do ul
+* não pode haver por exemplo um h1 antes
+
+ul li:first-child {
+
+}
+
+:nth-of-type()
+* pegue o primeiro elemento do tipo p dentro do article
+* existe a regra do tipo de elemento que deve ser
+* o  indice do elemento que vc deseja pegar vc passa nos parenteses x
+
+article p:nth-of-type(x) {
+
+}
+
+:nth-clid()
+
+*nesse caso não tem nenhuma regra de qual tipo o elemento dever ser
+* ou seja, esse seletor conta a partir de todos os seus elementos filhos
+* even = pares
+* odd = ímpares
+:nth-child(even/pares)
+usado para fazer zebrado
+
+article p:nth-child(x) {
+
+}
+
+pseudo-elements
+
+::before
+::after
+::first line -> somente a primeira linha de um texto

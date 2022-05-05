@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Red+Hat+Mono:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <script defer src="main.js"></script>
+    <title>DAtes</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="logo" href="index.html">Dates.com</a>
+            <nav>
+                <ul>
+                    <li><a class="title" href="">Que dia</a></li>
+                    <li><a class="title" href="">Projeto</a></li>
+                    <li><a class="title" href="">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+           <div class="content">
+               <h1 class="h1">Que dia será?</h1>
+                <section>
+                    <form action="" id="form"> 
+                        <fieldset>
+                            <legend>Descubra o dia que quiser</legend>
+                            <div class="input-group">
+                                <label for="">Qual o ser nome?</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="">Qual dia você quer saber?</label>
+                                <input type="number">
+                            </div>
+
+                        </fieldset>
+                        <div class="actions">
+                            <a href="#" class="button clear">Limpar</a>
+                            <button>Enviar</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="dates" class="invisible">
+                    <ul>
+                    </ul>
+                </section>
+           </div>
+        </main>
+    </div>
+</body>
+</html>

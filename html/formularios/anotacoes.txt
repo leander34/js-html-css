@@ -1,0 +1,46 @@
+autofocos -> um por página, se o usuário clicar no Enter, ele será ativado
+autocomplete="off" -> e uma serie de outras opcoes
+disable
+value
+name
+readonly
+form="dada" -> id do form que ele faz parte
+required
+placeholder
+
+pattern
+. significa qualquer caracter 
+.* multiplos caracteres
+.+ mais alguma outra coisa. significa qualquer caracter em muitas quantidades
+pattern=".+rocketseat\.com\.br"
+pattern=".*\.com\.br/.*"
+pattern="[0-9]{2}"
+
+
+
+step
+minlength
+maxlength
+
+inputmode="numeric"
+
+multiple -> permite um ou mais email separados por vírgula
+
+spellcheck -> habilita verificação ortográfica
+
+
+files
+
+accept=".doc"
+accept="video/*"
+accept="image/*"
+accept="image/png"
+
+enctype="multipart/form-data"
+
+aria-label=""
+
+number
+
+min
+max

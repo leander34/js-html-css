@@ -1,0 +1,173 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Red Hat Mono', monospace;
+font-family: 'Roboto', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+.show{
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+.logo {
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.title {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    transition: color .3s;
+}
+
+button, .button {
+    padding: 0.5rem 1rem;
+    border-radius: .4rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #fff;
+    background: rgb(0, 162, 255);
+    border: none;
+}
+
+button:hover, .button:hover {
+    opacity: 0.9;
+}
+
+.clear {
+    background: rgba(226, 38, 38, 0.767);
+}
+
+.title:hover {
+    color: aquamarine;
+}
+
+.container {
+    width: min(1440px, 80vw);
+    margin: 0 auto;
+}
+
+header {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+/* Principal */
+
+.content {
+    margin-top: 4rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main section:nth-of-type(1) {
+    margin-bottom: 4rem;
+}
+
+section {
+    padding: 2rem;
+    background: #fff;
+    min-width: 600px;
+    max-width: 600px;
+
+    border-radius: 10px;
+}
+
+
+section form fieldset {
+    border: none;
+}
+
+section form fieldset legend {
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: steelblue;
+}
+
+section form .input-group {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+section form .input-group label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: rgb(59, 59, 59);
+    margin-bottom: .6rem;
+}
+
+section form .input-group input {
+    width: 100%;
+    padding: .7rem 1.7rem;
+    outline: none;
+    border-radius: .4rem;
+    border: 1px solid #222;
+}
+
+section form .actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+}
+
+#dates ul {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#dates ul .list {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    max-width: 600px;
+}
+
+@media(max-width: 1100px) {
+    section {
+        min-width: 400px;
+    }
+}

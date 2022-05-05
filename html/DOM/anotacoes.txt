@@ -1,0 +1,57 @@
+
+-------------- Pais -------------
+parentNode e parentElement
+
+* pega o pai de um elemento
+
+-------------- filhos -------------
+childNodes e children
+
+* pega os filhos de um elemento
+* o childNodes pega os textos tbm, e é possível usar funções de arrays
+* o children não
+
+firstChild e firstElementChild
+
+* pega o primeiro filho de um elemento
+* firstChild pega o texto tbm, já o firstElementChild não
+
+lastChild e  lastElementChild
+
+* pega o último filho de um elemento
+
+-------------- irmãos -------------
+
+nextSibling e nextElementSibling
+
+* pega o próximo irmão
+* nextSibling pega textos tbm
+
+
+lastSibling e lastElementSibling
+
+* pega o último irmão
+* nextSibling pega textos tbm
+
+
+---------- Criar e adicionar elementos --------
+
+createElement
+* criar elementos
+
+
+append e prepend
+
+* append adiciona o elemento após os todos outros, ou seja, em último
+
+* prepend adiciona o elemento antes de todos os outros, ou seja, em primeiro
+
+
+insertBefore
+
+* inserir elementos antes de outros
+elemento = qual elemento vc criar e quer inserir no body
+
+body.insertBefore(elemento, header)
+
+
